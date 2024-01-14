@@ -1,0 +1,817 @@
+@import 'var_scss.scss';
+@mixin FormHeight {
+  height: 40px;
+  &.Sm {
+    height: 32px;
+  }
+
+  &.Lg {
+    height: 44px;
+  }
+
+  &.Xl {
+    height: 52px;
+  }
+
+  /* $PcMinWid 이상 화면*/
+  @media screen and (min-width: $PcMinWid) {
+    height: 48px;
+
+    &.Sm {
+      height: 40px;
+    }
+
+    &.Lg {
+      height: 52px;
+    }
+
+    &.Xl {
+      height: 60px;
+    }
+  }
+}
+/**/
+.SelectBox_1 {
+  @include FormHeight;
+
+  &:has(option[value='']:checked) {
+    color: #a3a1b1;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+    color: #a6a6a6;
+    background-color: #e1e1e1;
+    border-color: #a6a6a6;
+  }
+
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  box-sizing: border-box;
+  /**/
+  display: flex;
+  width: 100%;
+  border-radius: 0.5em;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0px 1em;
+  color: #333;
+  border: 1px solid #e1e1e1;
+  background-image: url(/icon/basic/sel_1.svg);
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  background-color: white;
+
+  &:focus {
+    border-color: #a6a6a6;
+    box-shadow: 0px 0px 6px 0px rgba(166, 166, 166, 0.6);
+  }
+
+  &.Success {
+    border-color: #4168f6;
+  }
+}
+/**/
+.SelectBox_2 {
+  @include FormHeight;
+
+  &:has(option[value='']:checked) {
+    color: #a3a1b1;
+  }
+
+  &[disabled] {
+    //pointer-events: none;
+    //color: #a6a6a6;
+    //background-color: #e1e1e1;
+    //border-color: #a6a6a6;
+  }
+
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  /**/
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border-bottom: 2px solid #26262c;
+  background-image: url(/icon/basic/sel_2.svg);
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  background-color: white;
+
+  &:focus {
+    //box-shadow: 0px 0px 6px 0px rgba(166, 166, 166, 0.6);
+  }
+
+  &.Success {
+    border-color: #4168f6;
+  }
+}
+/**/
+.Btn_0 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #767676;
+  &:hover {
+    color: #333;
+  }
+}
+/**/
+.Btn_1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 1.25em;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #e0dfea;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #161616;
+  text-align: center;
+
+  &.Sm {
+    height: 40px;
+  }
+  &:hover {
+  }
+}
+/**/
+.Btn_2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #8c8a9a;
+}
+/**/
+.Btn_3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25em;
+  height: 84px;
+  background-color: #5d45ff;
+  border: 1px solid #5d45ff;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+/**/
+.Btn_4 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25em;
+  height: 84px;
+  background-color: #fff;
+  border: 1px solid #e0dfea;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #26262c;
+}
+/**/
+.Btn_5 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25em;
+  height: 84px;
+  background-color: #26262c;
+  border: 1px solid #26262c;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/**/
+.Btn_6 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25em;
+  height: 56px;
+  background-color: #f0eff6;
+  font-size: 16px;
+  font-weight: 600;
+  color: #8c8a9a;
+}
+/**/
+.Btn_7 {
+  border: 1px solid #5d45ff;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 16px;
+  color: #5d45ff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+/**/
+.Btn_8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 16px;
+  color: #3d3c42;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  &:hover,
+  &.On {
+    border-color: #5d45ff;
+  }
+}
+/**/
+.Btn_9 {
+  border: 1px solid #26262c;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 14px;
+  color: #26262c;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  &:hover,
+  &.On {
+    border-color: #5d45ff;
+    color: #5d45ff;
+    background-color: #f0eff6;
+  }
+}
+
+/**/
+@mixin ButtonSizeVariation {
+  /*fixed*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  border-style: solid;
+
+  /*dynamic*/
+  height: 48px;
+  border-radius: 12px;
+  &.NoRounded {
+    border-radius: 0 !important;
+  }
+  font-size: 14px;
+  font-weight: 600;
+  border-width: 1px;
+
+  &.Sm {
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &.Lg {
+    height: 52px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &.Xl {
+    height: 60px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@mixin ButtonThemeSet($border_color: black, $bg: white, $color: black) {
+  border-color: $border_color;
+  background-color: $bg;
+  color: $color;
+}
+
+/**/
+.Button_1 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(#5d45ff, #5d45ff, #fff);
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#4f2cde, #4f2cde, #fff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#3d3c42, #3d3c42, #8c8a9a);
+  }
+}
+/**/
+.Button_2 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(#26262c, #26262c, #c6c5d0);
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#3d3c42, #3d3c42, #fff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#3d3c42, #3d3c42, #8c8a9a);
+  }
+}
+/**/
+.Button_3 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(#303030, #fff, #26262c);
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#303030, #ebebeb, #303030);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#a6a6a6, #e1e1e1, #a6a6a6);
+  }
+}
+/**/
+.Button_4 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(#5d45ff, #f0eff6, #5d45ff);
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#5d45ff, #e5e4ef, #5d45ff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#a6a6a6, #e1e1e1, #a6a6a6);
+  }
+}
+/**/
+.Button_5 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(#5d45ff, #f0eff6, #5d45ff);
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#5d45ff, #5d45ff, #fff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#a6a6a6, #e1e1e1, #a6a6a6);
+  }
+}
+/**/
+.Button_6 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(#303030, #fff, #26262c);
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#5d45ff, #f0eff6, #5d45ff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#a6a6a6, #e1e1e1, #a6a6a6);
+  }
+}
+/**/
+.Button_7 {
+  //@include ButtonSizeVariation;
+  //@include ButtonThemeSet(#ff0000, #ff0000, #ff0000);
+  //&:hover {
+  //  @include ButtonThemeSet(#ff0000, #ff0000, #ff0000);
+  //}
+  //&:disabled {
+  //  @include ButtonThemeSet(#ff0000, #ff0000, #ff0000);
+  //}
+}
+/**/
+.Button_8 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(transparent, #fff, #26262c);
+  padding-left: 12px;
+  justify-content: flex-start;
+
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#5d45ff, #f0eff6, #5d45ff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#a6a6a6, #e1e1e1, #a6a6a6);
+  }
+}
+/**/
+.Button_9 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(transparent, #fff, #26262c);
+
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#5d45ff, #f0eff6, #5d45ff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#a6a6a6, #e1e1e1, #a6a6a6);
+  }
+}
+/**/
+.Button_10 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(transparent, #fff, #8c8a9a);
+  padding-left: 20px;
+  justify-content: flex-start;
+  border-radius: 14px;
+
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(transparent, #f0eff6, #5d45ff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#a6a6a6, #e1e1e1, #a6a6a6);
+  }
+}
+/**/
+.Button_11 {
+  @include ButtonSizeVariation;
+  @include ButtonThemeSet(#303030, #fff, #26262c);
+  &:hover,
+  &.On {
+    @include ButtonThemeSet(#5d45ff, #5d45ff, #fff);
+  }
+  &:disabled {
+    @include ButtonThemeSet(#a6a6a6, #e1e1e1, #a6a6a6);
+  }
+}
+/**/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 0px transparent inset;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/**/
+.FormMsg {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  &.Type1 {
+    color: #5d45ff;
+  }
+  &.Type2 {
+    color: #f3436d;
+  }
+  &.Type3 {
+    color: #8c8a9a;
+  }
+}
+/**/
+.FormLabel_1 {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+/**/
+.TextInput_1 {
+  @include FormHeight;
+  @apply flex flex-row items-center justify-center gap-[0];
+  @apply relative rounded-[0.8em] text-[#26262c] text-[16px] font-[400] px-[1em] bg-white border-solid border-[1px] border-[#e0dfea];
+  @apply has-[input:not(:placeholder-shown)]:border-[#26262c];
+  @apply has-[input:read-only]:border-[#A3A1B1] has-[input:read-only]:bg-[#CFCEDC] has-[input:read-only]:pointer-events-none has-[input:read-only]:text-[#A3A1B1];
+  @apply has-[input:focus]:text-[#5D45FF] has-[input:focus]:border-[#5D45FF] has-[input:focus]:shadow-[0px_0px_6px_0px_rgba(93,69,255,0.6)];
+
+  > input {
+    @apply w-0 block flex-1 bg-transparent outline-0;
+    &::placeholder {
+      @apply text-[#a3a1b1];
+    }
+  }
+}
+/**/
+.TextInput_2 {
+  @include FormHeight;
+  @apply relative text-white text-[16px] font-[400];
+  @apply flex flex-row items-center gap-[0] outline-0 bg-transparent border-b-[2px] border-b-[#fff];
+  @apply has-[input:read-only]:border-[#A3A1B1] has-[input:read-only]:bg-[#CFCEDC] has-[input:read-only]:pointer-events-none has-[input:read-only]:text-[#A3A1B1];
+  @apply has-[input:focus]:text-[#9FAFFF] has-[input:focus]:border-[#9FAFFF];
+
+  > input {
+    @apply block bg-transparent outline-0 border-0 flex-1;
+    &::placeholder {
+      @apply text-[#a3a1b1];
+    }
+  }
+}
+/**/
+.TextInput_3 {
+  @include FormHeight;
+  @apply relative text-[#26262C] text-[16px] font-[400] border-solid border-b-[2px] border-[#26262c] bg-transparent;
+  @apply flex flex-row items-center;
+  @apply has-[input:focus]:text-[#5d45ff] has-[input:focus]:border-[#5d45ff];
+  @apply has-[input:read-only]:px-[16px] has-[input:read-only]:border-[#c6c5d0] has-[input:read-only]:bg-[#f0eff6] has-[input:read-only]:pointer-events-none has-[input:read-only]:text-[#26262c];
+
+  > input {
+    @apply block outline-0 bg-transparent border-0 flex-1;
+    &::placeholder {
+      @apply text-[#a3a1b1];
+    }
+  }
+}
+/**/
+.Textarea_1 {
+  border-radius: 12px;
+  border: 1px solid #e0dfea;
+  overflow: hidden;
+
+  > textarea {
+    width: 100%;
+    height: 100%;
+    resize: vertical;
+    outline: none;
+    padding: 12px;
+
+    color: #3d3c42;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    background-color: white;
+    &::placeholder {
+      color: var(--form-placeholder-color);
+    }
+  }
+}
+/**/
+.Textarea_2 {
+  width: 100%;
+  height: 152px;
+  resize: none;
+  outline: none;
+  padding: 1.1em;
+  border-radius: 0.8em;
+  color: #26262c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  border: 1px solid var(--form-border-color);
+  background-color: white;
+  &::placeholder {
+    color: var(--form-placeholder-color);
+  }
+  &.Error {
+    border-color: #ff3838;
+  }
+}
+/**/
+.Textarea_3 {
+  width: 100%;
+  height: 152px;
+  resize: none;
+  outline: none;
+  padding: 16px;
+  color: #26262c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  background-color: #f0eff6;
+  &::placeholder {
+    color: var(--form-placeholder-color);
+  }
+  &.Error {
+    border-color: #ff3838;
+  }
+}
+/**/
+.TabButton_1 {
+  @apply text-[#26262C] border-solid border-[1px] border-[#26262C] rounded-[12px] h-[60px] bg-white;
+  &:hover,
+  &.On {
+    @apply text-[#5D45FF] border-[#5D45FF] bg-[#F2EFFF];
+  }
+}
+@mixin mixinRadioButtonPublic {
+  aspect-ratio: 1;
+  appearance: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/**/
+.RadioButton_1 {
+  @include mixinRadioButtonPublic;
+  width: 24px;
+
+  + .LabalUi {
+    color: #26262c;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  background-image: url(/icon/basic/rdo_1.svg);
+  &:checked {
+    background-image: url(/icon/basic/rdo_1_on.svg);
+  }
+  &[disabled] {
+    background-image: url(/icon/basic/rdo_1_disabled.svg);
+    + .LabalUi {
+      color: #a3a1b1;
+    }
+  }
+
+  &.Sm {
+    width: 24px;
+
+    + .LabalUi {
+      color: #26262c;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    background-image: url(/icon/basic/rdo_2.svg);
+
+    &:checked {
+      background-image: url(/icon/basic/rdo_2_on.svg);
+    }
+
+    &[disabled] {
+      background-image: url(/icon/basic/rdo_2_disabled.svg);
+      + .LabalUi {
+        color: #a3a1b1;
+      }
+    }
+  }
+}
+
+@mixin mixinCheckBoxPublic {
+  aspect-ratio: 1;
+  appearance: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/**/
+.Checkbox_1 {
+  @include mixinCheckBoxPublic;
+  width: 24px;
+  
+  + .LabalUi {
+    color: #26262C;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  background-image: url(/icon/basic/chk_1-2.svg);
+  &:checked {
+    background-image: url(/icon/basic/chk_1-2_on.svg);
+  }
+  &[disabled] {
+    background-image: url(/icon/basic/chk_1-2_disabled.svg);
+    + .LabalUi {
+      color: #A3A1B1;
+    }
+  }
+  
+  &.Sm {
+    width: 24px;
+    
+    + .LabalUi {
+      color: #26262C;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    background-image: url(/icon/basic/chk_1-1.svg);
+    &:checked {
+      background-image: url(/icon/basic/chk_1-1_on.svg);
+    }
+    &[disabled] {
+      background-image: url(/icon/basic/chk_1-1_disabled.svg);
+      + .LabalUi {
+        color: #A3A1B1;
+      }
+    }
+  }
+
+  &.Lg {
+    width: 30px;
+    
+    + .LabalUi {
+      color: #26262C;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    
+    background-image: url(/icon/basic/chk_1-3.svg);
+    &:checked {
+      background-image: url(/icon/basic/chk_1-3_on.svg);
+    }
+    &[disabled] {
+      background-image: url(/icon/basic/chk_1-3_disabled.svg);
+      + .LabalUi {
+        color: #A3A1B1;
+      }
+    }
+  }
+}
+/**/
+.Checkbox_2 {
+  @include mixinCheckBoxPublic;
+  
+  width: 24px;
+  
+  + .LabalUi {
+    color: #26262C;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  background-image: url(/icon/basic/chk_2-2.svg);
+  &:checked {
+    background-image: url(/icon/basic/chk_2-2_on.svg);
+  }
+  &[disabled] {
+    background-image: url(/icon/basic/chk_2-2_disabled.svg);
+    + .LabalUi {
+      color: #A3A1B1;
+    }
+  }
+  
+  &.Sm {
+    width: 24px;
+    
+    + .LabalUi {
+      color: #26262C;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    background-image: url(/icon/basic/chk_2-1.svg);
+    &:checked {
+      background-image: url(/icon/basic/chk_2-1_on.svg);
+    }
+    &[disabled] {
+      background-image: url(/icon/basic/chk_2-1_disabled.svg);
+      + .LabalUi {
+        color: #A3A1B1;
+      }
+    }
+  }
+  
+  &.Lg {
+    width: 30px;
+    
+    + .LabalUi {
+      color: #26262C;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    
+    background-image: url(/icon/basic/chk_2-3.svg);
+    &:checked {
+      background-image: url(/icon/basic/chk_2-3_on.svg);
+    }
+    &[disabled] {
+      background-image: url(/icon/basic/chk_2-3_disabled.svg);
+      + .LabalUi {
+        color: #A3A1B1;
+      }
+    }
+  }
+}
+
+/**/
+.ToggleButton_1 {
+  width: 48px;
+  height: 28px;
+  appearance: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 300ms cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: auto;
+
+  background-image: url(/icon/basic/toggle_1.svg);
+  &:checked {
+    background-image: url(/icon/basic/toggle_1_on.svg);
+  }
+  &[disabled] {
+    opacity: 0.4;
+  }
+}

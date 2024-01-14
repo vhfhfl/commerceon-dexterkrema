@@ -1,0 +1,747 @@
+@import 'var_scss.scss';
+/**/
+.Badge_1 {
+  border-radius: 14px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 10px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 12px;
+  font-weight: 600;
+  border-color: #767676;
+  color: #767676;
+
+  &.Style1 {
+    border-color: #4168f6;
+    color: #4168f6;
+  }
+}
+/**/
+.Badge_2 {
+  border-radius: 4px;
+  padding: 0 10px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #26262c;
+  background-color: #f0eff6;
+
+  &.Style1 {
+    color: #fff;
+    background-color: #5d45ff;
+  }
+}
+/**/
+.Badge_3 {
+  border-radius: 30px;
+  padding: 0 10px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5d45ff;
+  background-color: #f0eff6;
+}
+
+/**/
+.DescBox_1 {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  background: #f4f4f4;
+  padding: 12px 10px;
+  font-weight: 400;
+  color: var(--text-color1);
+  font-size: 14px;
+  line-height: 20px;
+}
+/**/
+.DescBox_2 {
+  border-radius: 6px;
+  border: 1px solid var(--sub-border-2, #e1e1e1);
+  background: var(--sub-backgraound, #ffffff);
+  padding: 16px;
+
+  .Txt1 {
+    text-align: left;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+/**/
+.DescBox_3 {
+  border-radius: 11px;
+  background: #f0eff6;
+  padding: 17px 12px;
+  .DescList_4 {
+    > li {
+      color: #8c8a9a;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: inherit;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      &:before {
+        content: '';
+        background-image: url('/icon/2312051224.svg');
+        width: 24px;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        margin-right: 2px;
+      }
+      + li {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+/**/
+.DescList_1 {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.25em;
+  > li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    &:before {
+      content: '-';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-right: 0.3em;
+    }
+    + li {
+      margin-top: 0.2em;
+    }
+  }
+}
+/**/
+.DescList_2 {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+
+  > li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    &:before {
+      content: '\2022';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-right: 0.3em;
+    }
+    + li {
+      margin-top: 0.2em;
+    }
+  }
+}
+/**/
+.DescList_3 {
+  --p-left: 1.5em;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  width: calc(100% - var(--p-left));
+  //list-style: auto;
+  list-style: hangul;
+  margin-left: var(--p-left);
+  li + li {
+    margin-top: 0.5em;
+  }
+}
+/**/
+.DescList_4 {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+
+  > li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    &:before {
+      content: '';
+      background-image: url('/icon/2312051224.svg');
+      width: 24px;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-right: 2px;
+    }
+    + li {
+      margin-top: 4px;
+    }
+  }
+}
+/**/
+.DescList_5 {
+  > li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    &:before {
+      content: '';
+      background-image: url('/icon/basic/chk_2-1_on.svg');
+      width: 24px;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+    + li {
+      margin-top: 8px;
+    }
+
+    > .Txt1 {
+      margin-left: 8px;
+      flex: 1 1 0%;
+      color: #26262c;
+      font-size: 16px;
+      font-weight: 400;
+      > .Txt2 {
+        color: #8c8a9a;
+        font-size: 14px;
+      }
+    }
+  }
+}
+/**/
+.DescList_6 {
+  > li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    &:before {
+      content: '';
+      background-image: url('/icon/2312211336.svg');
+      width: 24px;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+    + li {
+      margin-top: 8px;
+    }
+
+    > .Txt1 {
+      margin-left: 8px;
+      flex: 1 1 0%;
+      color: #26262c;
+      font-size: 16px;
+      font-weight: 400;
+      > .Txt2 {
+        color: #8c8a9a;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/**/
+.BottomBtnBox_1 {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  > * {
+    flex: 1;
+  }
+}
+
+/**/
+.BottomNavi_1 {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 0;
+  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  //padding-bottom: 3px;
+  padding-bottom: calc(3px + var(--sab, 0px));
+  button {
+    color: var(--text-color1);
+    height: 50px;
+    border-radius: 12px;
+    .Icon {
+      svg {
+        width: 24px;
+      }
+    }
+    .Label {
+      font-size: 10px;
+      font-weight: 400;
+    }
+    &.On {
+      .Label {
+        color: #ea2c2c;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/**/
+.Divider_1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 6px;
+  border-bottom: 1px solid #e1e1e1;
+  background: #ebebeb;
+}
+/**/
+.Divider_2 {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  height: 1px;
+  border-bottom: 1px solid #e0dfea;
+}
+/**/
+.RadioGroup_1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  outline-offset: -1px;
+  outline: 1px solid #e0dfea;
+  &.Sm {
+    > label {
+      height: 40px;
+    }
+  }
+  > label {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    color: #5d45ff;
+    font-size: 14px;
+    font-weight: 500;
+    border-left: 1px solid #e0dfea;
+    &:first-child {
+      border-left: 0;
+    }
+    > input {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      appearance: none;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      &:checked {
+        + .Label {
+          color: #fff;
+          background-color: #5d45f6;
+        }
+      }
+    }
+
+    > .Label {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+  }
+}
+
+/**/
+.TabBar_1 {
+  > .TabButtonList {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    .TabButton {
+      position: relative;
+      flex: 1;
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #a3a1b1;
+      border-radius: 12px 12px 0 0;
+      color: #8c8a9a;
+      font-size: 16px;
+      font-weight: 600;
+      &.On {
+        color: #fff;
+        border-color: #fff;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}
+/**/
+.PagingSet_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  .NavBtnBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    > a {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      box-sizing: border-box;
+      color: #333;
+      > svg {
+        width: 100%;
+      }
+    }
+  }
+  .NumBtnBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    > a {
+      white-space: nowrap;
+      //min-width: 24px;
+      aspect-ratio: 1/1;
+      width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      padding: 0 8px;
+      box-sizing: border-box;
+      color: #333;
+      &.On {
+        color: #fff;
+        background-color: #5d45ff;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+/**/
+.TableUi_1 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  color: #26262c;
+  &.CenterMode {
+    text-align: center;
+  }
+  > thead {
+    th {
+      border-top: 1px solid #e0dfea;
+      border-bottom: 1px solid #e0dfea;
+      height: 60px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  > tbody {
+    td {
+      border-left: 1px solid #e0dfea;
+      border-bottom: 1px solid #e0dfea;
+      height: 60px;
+      font-size: 16px;
+      font-weight: 400;
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+}
+/**/
+.TableUi_2 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #f0eff6;
+  color: #26262c;
+  text-align: left;
+  border-top: 1px solid #e0dfea;
+  border-bottom: 1px solid #e0dfea;
+  tbody {
+    tr + tr {
+      border-top: 1px solid #e0dfea;
+    }
+    th {
+      padding-left: 24px;
+      height: 100px;
+      font-size: 18px;
+      font-weight: 700;
+      border-right: 1px solid #e0dfea;
+    }
+    td {
+      padding: 24px 0 24px 24px;
+      height: 100px;
+      background-color: #fff;
+    }
+  }
+}
+
+/**/
+.Breadcrumb_1 {
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+    color: #5d45ff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+/**/
+.Modal_1 {
+  width: 540px;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 32px;
+  > .Head {
+    color: #26262c;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.38px;
+  }
+  > .Body {
+    margin-top: 60px;
+  }
+  > .Foot {
+    margin-top: 60px;
+  }
+}
+/**/
+.Modal_2 {
+  width: 800px;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 32px;
+  > .Head {
+    color: #26262c;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.38px;
+  }
+  > .Body {
+    margin-top: 40px;
+  }
+  > .Foot {
+    margin-top: 60px;
+  }
+}
+/**/
+.Modal_3 {
+  width: 1128px;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 32px;
+  > .Head {
+    color: #26262c;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+  > .Body {
+    margin-top: 48px;
+  }
+  > .Foot {
+    margin-top: 36px;
+  }
+}
+
+/**/
+.ShadowBox_1 {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 32px 0 rgba(20, 8, 104, 0.16);
+}
+
+/**/
+.InquiryFlexBox_1 {
+  > .Txt1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8c8a9a;
+  }
+  .Item {
+    padding: 0 36px;
+    height: 82px;
+    color: #26262c;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #e0dfea;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    .Txt2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.24px;
+    }
+  }
+}
+/**/
+.DataGrid_1 {
+  border-radius: 12px;
+  border: 1px solid #e0dfea;
+  color: #26262c;
+  font-size: 14px;
+  line-height: 18px;
+  overflow: hidden;
+
+  > .GridHead {
+    background-color: #f0eff6;
+
+    &.Light {
+      background-color: #fff;
+    }
+
+    overflow-y: scroll;
+
+    scrollbar-color: transparent transparent;
+    &::-webkit-scrollbar {
+      background-color: transparent;
+    }
+
+    > table {
+      table-layout: fixed;
+      border-collapse: collapse;
+      width: 100%;
+      > thead {
+        > tr {
+          > th {
+            padding: 12px 12px;
+            color: #26262c;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            border-bottom: 1px solid #e0dfea;
+
+            + th {
+              border-left: 1px solid #e0dfea;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > .GridBody {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: white;
+
+    > table {
+      table-layout: fixed;
+      border-collapse: collapse;
+      width: 100%;
+      > tbody {
+        > tr {
+          > td {
+            text-align: center;
+            padding: 6px 12px;
+            color: #26262c;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+
+            + td {
+              border-left: 1px solid #e0dfea;
+            }
+          }
+
+          + tr {
+            > td {
+              border-top: 1px solid #e0dfea;
+            }
+          }
+
+          &:last-child {
+            > td {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.NoScroll {
+    > .GridHead,
+    > .GridBody {
+      overflow: hidden;
+    }
+  }
+}
