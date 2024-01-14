@@ -10,7 +10,7 @@ npm run dev
 ```
 
 # 📌 Stage Server
-- 
+- https://commerceon-dexterkrema-dltjdms-projects.vercel.app/basic/sitemap
 
 
 # 📌 Real Server
